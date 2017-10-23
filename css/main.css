@@ -258,7 +258,8 @@ p.text-uppercase{
 
 
 .work1{
-  display: inline-block; /*Todas las imagenes estan contenidas en diferentes div ,pero con la misma clase work1*/
+  display: inline-block;
+   /*Todas las imagenes estan contenidas en diferentes div ,pero con la misma clase work1*/
 } /*Display inline-block para que los div que contienen las imagenes y <a> queden uno al lado del otro*/
 
 .section3 .work1 a{
