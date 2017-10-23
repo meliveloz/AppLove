@@ -1,4 +1,4 @@
-/*CLASES REUTILIZABLES*/
+/*_____________________________________________________CLASES REUTILIZABLES______________________________________*/
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -22,11 +22,15 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: auto;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 14px;
   padding-right: 14px;
+  z-index: 2;
+  position: fixed;
+  top:0;
+  background-color: white;
+
 }
 
 .container:before, .container:after {
@@ -42,6 +46,7 @@ img {
 
 .container:after {
   clear: both;
+
 }
 
 .mb-0 {
@@ -67,7 +72,214 @@ a:hover {
 
 .text-uppercase {
   text-transform: uppercase;
+  text-align: center;
 }
 
 /*ESCRIBE TU CÓDIGO DESDE AQUÍ*/
 
+
+/* __________________________________________________Menú Horizontal_____________________________________________________*/
+
+.div1{
+  background-color: white; /*El background debe ser blanco para que no se vean las imagenes por detras al hacer scroll*/
+  width: 1450px;
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 160px;
+  margin-bottom: 25px;
+}
+
+
+.container div a{
+  margin-right: 40px;
+  background-color: white;
+  font-weight:bold;
+  font-family: 'Raleway', sans-serif; /*Insertando la font-family RALEWAY recomendada en el README*/
+}
+
+.logo{
+  width: 65px;
+  height: 65px;
+  margin-left: 600px;
+}
+
+
+/*________________________________________________Parte sección principal________________________________________________*/
+
+.section-principal{
+  background-image: url(../assets/images/bg-home.jpg); /*Aplicando imagen como background*/
+  background-repeat: no-repeat;
+  background-size:100% 100%;  /*Para que la imagen cubra todo mi contenedor,viendose la imagen completa sin cortes*/
+  height: 600px; /*Largo de mi sección*/
+  max-width: 1450px;
+  margin-top: 60px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.section1{
+  text-align:center;
+  height: 500px;
+}
+
+h2.text-uppercase{
+  padding-top: 8%;
+  color: white;
+ 
+}
+
+h1.text-uppercase{
+  padding-top: 1%;
+  font-size: 45px;
+  color:white;
+}
+
+p.text-uppercase{
+  color: white;
+}
+
+.view{
+  text-align: center;
+  color:white;
+  background-color: #2ecc71;
+  display: block; /*Le di display block para poder dar dimensiones a mi boton verde*/
+  width: 150px;
+  height: 50px;
+  margin-left: 600px;
+  padding-top: 1%;
+  margin-top: 100px;
+
+}
+/*_____________________________________________Sección 2: Fondo Rosado___________________________________________________*/
+
+
+.section2{
+  background-color:#f17c72;
+  max-width: 1450px;
+  height: 650px;
+}
+
+.service h2{
+ padding-top: 6%;
+ letter-spacing: 3px;
+ font-weight:bolder;
+}
+
+.service{
+  height: 650px;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.service h4{
+  padding-top: 1%;
+}
+
+.user1{
+  display: inline-block; /* Para que las imagenes queden una al lado de la otra*/
+  margin-top: 70px;
+  margin-right: 100px;
+  margin-left: 145px;
+  line-height: 0; /*En el ejemplo de ve que hay el mínimo de espacio entre lineas*/
+  
+}
+
+.user1 img{
+  width:200px ; /*Dando dimension a la imagen*/
+  height: 200px;
+}
+
+.concept1{
+  display: inline-block; /*Vuelvo a aplicar inline-block para que queden una al lado de la otra*/
+  margin-right: 100px;
+  text-align: center;
+  line-height: 0;
+}
+
+.concept1 img{
+  width:200px;
+  height:200px;
+  text-align: center;
+  border-top: none;
+  
+}
+
+.desing1{
+  display: inline-block; /*Lo mismo con la tercera imagen de esta sección*/
+  margin-right: 100px;
+  line-height: 0;
+
+}
+.desing1 img{
+  width: 200px;
+  height: 200px;
+}
+
+.user1 h6,.concept1 h6,.desing1 h6{
+  margin: 16px;  /*Para dar separación*/
+}
+
+/*___________________________________________________Sección 3 :Foto computador______________________________________*/
+
+
+
+.section3{
+  background-color: white;
+  max-width: 1450px;
+  height: 2150px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  color:  #373B47;
+}
+
+.section3 h2{
+  padding-top: 5%;
+  color:black;
+  font-size: 34px;
+}
+
+.section3 div .computer{  /*Dando dimensiones a la imagen de computador*/
+  max-width: 1450px;
+  width: 900px;
+  height: 800px;
+  text-align: center;
+}
+
+/*_____________________________________________Menú de imagenes final_______________________________________________*/
+
+.section3 .work1 img{ /*Dando dimensiones a las pequeñas imagenes*/
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-bottom: 15px;
+  margin-right: 50px;
+  width: 300px;
+  height: 250px;
+}
+
+
+.work1{
+  display: inline-block; /*Todas las imagenes estan contenidas en diferentes div ,pero con la misma clase work1*/
+} /*Display inline-block para que los div que contienen las imagenes y <a> queden uno al lado del otro*/
+
+.section3 .work1 a{
+  font-weight: bolder;
+  display: block;  /* <a> lo cambio a block para que quede por debajo de la imagen*/
+  margin-bottom: 30px;
+}
+
+/*_______________________________________________________FOOTER______________________________________________________*/
+
+footer{
+  background-color: #373b47;
+  max-width: 1450px;
+  height:80px;
+  text-align: center;
+}
+
+footer p{
+  color: #a1a3a8;
+  font-family: 'Raleway', sans-serif;
+  padding-top:2%;
+
+
+}

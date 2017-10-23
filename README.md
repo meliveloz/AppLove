@@ -58,3 +58,15 @@ Este reto sera evaluado sobre lo siguiente:
 - Estructura de tus archivos
 - Archivo `README.md` actualizado y correctamente redactado
 - Uso de comentarios para hacer tu código más legible
+
+
+## Actualización :
+- vincular html con css a traves de link.
+- Buscar en google font y enlazar la fuente Raleway a travez de link.
+- Identificar donde aplicar las clases reutilizables.
+- Agregar img logo
+- Fixed para mantener siempre visible el menú horizontal.
+- Agregar fondos.
+- Agregar imagenes.
+
+
